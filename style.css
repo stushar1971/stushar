@@ -121,6 +121,40 @@ h2 {
   margin-bottom: 15px;
   font-size: 1.5rem;
 }
+/* ==================== Treatment Cards ==================== */
+.treatment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.treatment-card {
+  background: var(--light-bg);
+  border: 2px solid var(--primary);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.treatment-card h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.treatment-card p {
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.treatment-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  background: #fff;
+}
 
 /* ==================== Grid ==================== */
 .grid {
@@ -193,40 +227,6 @@ h2 {
 .doctor-card a:hover {
   color: #084c9e;
 
-/* ==================== Treatment Cards ==================== */
-.treatment-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.treatment-card {
-  background: var(--light-bg);
-  border: 2px solid var(--primary);
-  border-radius: 15px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-}
-
-.treatment-card h3 {
-  color: var(--primary);
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-}
-
-.treatment-card p {
-  color: var(--text);
-  font-size: 0.95rem;
-}
-
-.treatment-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  background: #fff;
-}
 
 /* ==================== Buttons ==================== */
 .btn {
