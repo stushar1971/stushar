@@ -121,7 +121,7 @@ h2 {
   margin-bottom: 15px;
   font-size: 1.5rem;
 }
-/* ==================== Treatment Cards ==================== */
+/* ==================== Treatment Cards Section ====================*/
 .treatment-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -130,8 +130,8 @@ h2 {
 }
 
 .treatment-card {
-  background: var(--light-bg);
-  border: 2px solid var(--primary);
+  background: var(--light-bg, #f5f5ff);
+  border: 2px solid var(--primary, #0a74da);
   border-radius: 15px;
   padding: 20px;
   text-align: center;
@@ -140,13 +140,13 @@ h2 {
 }
 
 .treatment-card h3 {
-  color: var(--primary);
+  color: var(--primary, #0a74da);
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
 
 .treatment-card p {
-  color: var(--text);
+  color: var(--text, #2c2c2c);
   font-size: 0.95rem;
 }
 
@@ -155,6 +155,7 @@ h2 {
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
   background: #fff;
 }
+
 
 /* ==================== Grid ==================== */
 .grid {
